@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: rgb(87, 87, 87);
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #9C1B32;
+  }
+  .carousel-inner img {
+    -webkit-filter: brightness(90%);
+    filter: brightness(90%); 
+    width: 100%; 
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  footer {
+    background-color: #9C1B32;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  </style>
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">
+      <img src="logo_mapui.png" alt="LOGO" width="" height="50" />
+    </a>
+    <div
+      class="collapse navbar-collapse d-flex justify-content-end"
+      id="navbarNavDropdown"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="./datos.php"
+            >Datos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./equipo.html"
+            >Equipo</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="" alt="Tec Van" width="1200" height="700">
+            <div class="carousel-caption">
+            <h3>Múltiples Tecnologías</h3> 
+            <p>Implementando tecnologías vanguardistas</p>
+            </div>      
+        </div>
+
+        <div class="item">
+            <img src="" alt="Ec Ac" width="1200" height="700">
+            <div class="carousel-caption">
+            <h3>Naturaleza Acuática</h3>
+            <p>Priorizando el prevalecimiento de condiciones óptimas para los acuarios</p>
+            </div>      
+        </div>
+        
+        <div class="item">
+            <img src="" alt="Des Ec" width="1200" height="700">
+            <div class="carousel-caption">
+            <h3>Desarrollo Económico</h3>
+            <p>Apoyando e impulsando el mercado</p>
+            </div>      
+        </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="US" class="container text-center">
+    <h3>Aquar-IoT</h3>
+    <p><em>Le damos vida a los acuarios</em></p>
+    <div class="row">
+        <div class="col-sm-6">
+        <h3>Misión</h3>
+        <p>Buscamos El desarrollo de multiples tecnologías de naturaleza acuática para el desarrollo económico del pais manteniendo principios de sostenibilidad y buscando un mejor futuro siguiendo los Objetivos de Desarrollo Sustentable</p> 
+        </div>
+        <div class="col-sm-6">
+        <h3>Visión</h3>
+        <p>Nuestro Objetivo es convertirnos en la empresa numero uno del pais en desarrollo, investigación y venta de Tecnología centrada en el negocio marítimo promoviendo la sustentabilidad y el cuidado del ambiente.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p>Integrantes</p>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+        <p class="text-center"><strong></strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+            <img src="" class="img-circle person" alt="Name1" width="255" height="255">
+        </a>
+        <div id="demo" class="collapse">
+            <p>Guitarist and Lead Vocalist</p> 
+            <p>Loves long walks on the beach</p> 
+            <p>Member since 1988</p> 
+        </div>
+        </div>
+        <div class="col-sm-3">
+        <p class="text-center"><strong></strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+            <img src="" class="img-circle person" alt="Name2" width="255" height="255">
+        </a>
+        <div id="demo2" class="collapse">
+          <p>Guitarist and Lead Vocalist</p> 
+          <p>Loves long walks on the beach</p> 
+          <p>Member since 1988</p> 
+      </div>
+        </div>
+        <div class="col-sm-3">
+        <p class="text-center"><strong></strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+            <img src="" class="img-circle person" alt="Name3" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Guitarist and Lead Vocalist</p> 
+          <p>Loves long walks on the beach</p> 
+          <p>Member since 1988</p>
+      </div>
+        </div>
+        <div class="col-sm-3">
+            <p class="text-center"><strong></strong></p><br>
+            <a href="#demo4" data-toggle="collapse">
+              <img src="" class="img-circle person" alt="Name4" width="255" height="255">
+            </a>
+        <div id="demo4" class="collapse">
+          <p>Guitarist and Lead Vocalist</p>
+          <p>Loves long walks on the beach</p>
+          <p>Member since 1988</p>
+      </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>MAPUI</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore suscipit vitae reprehenderit incidunt. Enim quibusdam, provident repudiandae id praesentium temporibus fugiat incidunt, reprehenderit dolores porro, odit quae sequi debitis!</p>
+        <ul class="social">
+          li
+        </ul>
+      </div>
+    
+    </footer>
+
+
+</body>
+</html>
